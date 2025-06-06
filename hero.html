@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/hero.css" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
+    />
+    <title>Ruu Warna</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+
+  <body
+    class="bg-white"
+    style="font-family: 'Plus Jakarta Sans', 'Noto Sans', sans-serif"
+  >
+    <nav class="bg-white border-b border-gray-200 shadow-md fixed w-full z-50">
+      <div class="max-w-10xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+          <!-- Logo -->
+          <div class="flex-shrink-0 text-2xl font-bold font-bold text-gray-800">
+            Ruu Warna <span class="text-blue-400">Art Gallery</span>
+          </div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex space-x-8 items-center font-semibold">
+            <a href="#" class="text-gray-700 hover:text-black">Home</a>
+            <a href="#" class="text-gray-700 hover:text-black"
+              >Special Offers</a
+            >
+            <a href="#" class="text-gray-700 hover:text-black">About</a>
+            <a href="#" class="text-gray-700 hover:text-black">Featured</a>
+            <a
+              href="#"
+              class="text-white bg-blue-400 p-2 rounded-md w-75 hover:bg-blue-500"
+              >Contact</a
+            >
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden">
+            <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown -->
+      <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2">
+        <a href="#" class="block text-gray-700 hover:text-black">Home</a>
+        <a href="#" class="block text-gray-700 hover:text-black"
+          >Special Offers</a
+        >
+        <a href="#" class="block text-gray-700 hover:text-black">About</a>
+        <a href="#" class="block text-gray-700 hover:text-black">Featured</a>
+        <a href="#" class="block text-gray-700 hover:text-black">Contact</a>
+      </div>
+    </nav>
+
+    <main
+      class="relative min-h-screen bg-cover bg-center"
+      style="
+        background-image: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97');
+      "
+    >
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+      <div
+        class="relative z-10 flex items-center justify-center min-h-screen text-center"
+      >
+        <div class="max-w-3xl px-6">
+          <h1 class="text-5xl md:text-6xl font-bold text-white mb-6">
+            Welcome to Ruu Warna Art Gallery
+          </h1>
+          <p class="text-xl text-gray-200 mb-8">
+            Explore our collection of stunning artworks and special offers.
+          </p>
+          <a href="#" class="inline-block">
+            <!-- From Uiverse.io by vinodjangid07 -->
+            <!-- From Uiverse.io by Wlidha09 -->
+            <button class="btn-white" href="#">Discover</button>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- about us section -->
+    <section class="py-16 bg-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-8">About Us</h2>
+        <p class="text-lg text-gray-700 text-center">
+          Welcome to Ruu Warna Art Gallery, where creativity meets passion. Our
+          gallery showcases a diverse range of artworks from talented artists
+          around the world. Join us in celebrating the beauty of art and
+          culture.
+        </p>
+      </div>
+    </section>
+
+    <!-- featured secion -->
+    <section class="py-16 bg-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-8">Featured Artworks</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Artwork Card -->
+          <div
+            class="w-80 p-4 bg-white rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300 ease-in-out"
+          >
+            <img
+              class="w-full h-40 object-cover rounded-t-lg"
+              alt="Card Image"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhVhgW6cf1Rz8z-k3VhK44weVwpZTuM8ofSA&s"
+            />
+            <div class="p-4">
+              <h2 class="text-xl font-semibold">Beautiful Card</h2>
+              <p class="text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                quis ante sit amet tellus ornare tincidunt.
+              </p>
+              <div class="flex justify-between items-center mt-4">
+                <button
+                  class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Repeat for more artworks -->
+          <div
+            class="w-80 p-4 bg-white rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300 ease-in-out"
+          >
+            <img
+              class="w-full h-40 object-cover rounded-t-lg"
+              alt="Card Image"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhVhgW6cf1Rz8z-k3VhK44weVwpZTuM8ofSA&s"
+            />
+            <div class="p-4">
+              <h2 class="text-xl font-semibold">Beautiful Card</h2>
+              <p class="text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                quis ante sit amet tellus ornare tincidunt.
+              </p>
+              <div class="flex justify-between items-center mt-4">
+                <button
+                  class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-80 p-4 bg-white rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300 ease-in-out"
+          >
+            <img
+              class="w-full h-40 object-cover rounded-t-lg"
+              alt="Card Image"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhVhgW6cf1Rz8z-k3VhK44weVwpZTuM8ofSA&s"
+            />
+            <div class="p-4">
+              <h2 class="text-xl font-semibold">Beautiful Card</h2>
+              <p class="text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                quis ante sit amet tellus ornare tincidunt.
+              </p>
+              <div class="flex justify-between items-center mt-4">
+                <button
+                  class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-80 p-4 bg-white rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300 ease-in-out"
+          >
+            <img
+              class="w-full h-40 object-cover rounded-t-lg"
+              alt="Card Image"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhVhgW6cf1Rz8z-k3VhK44weVwpZTuM8ofSA&s"
+            />
+            <div class="p-4">
+              <h2 class="text-xl font-semibold">Beautiful Card</h2>
+              <p class="text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                quis ante sit amet tellus ornare tincidunt.
+              </p>
+              <div class="flex justify-between items-center mt-4">
+                <button
+                  class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-80 p-4 bg-white rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300 ease-in-out"
+          >
+            <img
+              class="w-full h-40 object-cover rounded-t-lg"
+              alt="Card Image"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhVhgW6cf1Rz8z-k3VhK44weVwpZTuM8ofSA&s"
+            />
+            <div class="p-4">
+              <h2 class="text-xl font-semibold">Beautiful Card</h2>
+              <p class="text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                quis ante sit amet tellus ornare tincidunt.
+              </p>
+              <div class="flex justify-between items-center mt-4">
+                <button
+                  class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- stop -->
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-blue-500 text-white py-6">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-sm">
+          &copy; 2023 Ruu Warna Art Gallery. All rights reserved.
+        </p>
+
+        <!-- Social Media Icons -->
+        <div class="flex justify-center space-x-6 mt-4">
+          <!-- Facebook -->
+          <a href="#" class="hover:text-gray-200" aria-label="Facebook">
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M22 12.07C22 6.48 17.52 2 12 2S2 6.48 2 12.07c0 5.02 3.66 9.19 8.44 9.93v-7.03H7.9v-2.9h2.54V9.91c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34v7.03C18.34 21.26 22 17.09 22 12.07z"
+              />
+            </svg>
+          </a>
+
+          <!-- WhatsApp -->
+          <a href="#" class="hover:text-gray-200" aria-label="WhatsApp">
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 32 32">
+              <path
+                d="M16 2.933c-7.314 0-13.25 5.937-13.25 13.25 0 2.37.646 4.675 1.875 6.7L2.133 29.867l7.042-2.479c1.968 1.106 4.191 1.688 6.825 1.688 7.314 0 13.25-5.937 13.25-13.25S23.314 2.933 16 2.933zm0 23.917c-2.106 0-4.102-.573-5.85-1.656l-.417-.25-4.167 1.479 1.417-4.062-.271-.437C5.605 20.049 5.067 18.554 5.067 16.183c0-6.008 4.925-10.933 10.933-10.933s10.933 4.925 10.933 10.933S22.008 26.85 16 26.85zm5.471-7.617c-.291-.146-1.724-.848-1.99-.945-.266-.099-.458-.146-.65.146s-.745.945-.915 1.143c-.167.195-.337.219-.628.073-.291-.147-1.229-.453-2.34-1.444-.865-.77-1.449-1.717-1.621-2.008-.168-.291-.018-.448.127-.593.13-.13.291-.337.437-.505.147-.167.196-.292.293-.486.098-.195.049-.365-.024-.512-.074-.146-.65-1.568-.89-2.153-.233-.559-.47-.483-.649-.492l-.552-.01c-.192 0-.505.073-.77.365s-1.01.987-1.01 2.403 1.033 2.788 1.177 2.984c.146.195 2.034 3.11 4.932 4.365.689.297 1.225.474 1.643.606.69.22 1.318.189 1.813.115.553-.083 1.724-.704 1.969-1.385.243-.682.243-1.267.17-1.386-.073-.12-.267-.194-.559-.34z"
+              />
+            </svg>
+          </a>
+
+          <!-- TikTok -->
+          <a href="#" class="hover:text-gray-200" aria-label="TikTok">
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 256 256">
+              <path
+                d="M232 64a72.07 72.07 0 0 1-72-72h-32v144a40 40 0 1 1-40-40v-32a72 72 0 1 0 72 72V92.77A103.76 103.76 0 0 0 232 104z"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <div class="mt-4">
+          <p class="text-sm">
+            Follow us on social media for the latest updates and offers.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const toggle = document.getElementById("menu-toggle");
+      const menu = document.getElementById("mobile-menu");
+
+      toggle.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
