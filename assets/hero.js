@@ -7,7 +7,7 @@ document.querySelectorAll(".send-whatsapp-btn").forEach((button) => {
 
     const message = `Hello, I'm interested in "${title}"\n\n${desc}\n\nImage: ${image}`;
     const encodedMessage = encodeURIComponent(message);
-    const phoneNumber = "94711405170"; // Replace with your number
+    const phoneNumber = "94764855395"; // Replace with your number
 
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     window.open(whatsappURL, "_blank");
